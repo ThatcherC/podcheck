@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Dafna's Zebra Podcast</title>
+    <itunes:owner>
+        <itunes:email>dafna@example.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>Dafna</itunes:author>
+    <description>A pet-owner's guide to the popular striped equine.</description>
+    <itunes:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+    <language>en-us</language>
+    <link>https://www.example.com/podcasts/dafnas-zebras/</link>
+  </channel>
+</rss>
