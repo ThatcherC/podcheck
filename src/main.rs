@@ -41,8 +41,8 @@ fn check_for_image(channel: Channel) -> i32 {
     let imagereport = match channel.image {
         Some(image) => format!("<image> tag with url:\n    \"{}\"",
                                 image.url).green(),
-        None => match channel.itunes_ext {
-            None => {errors += 1; "no <image> or <itunes:image> tag found".red()},
+        None => match channel.itunes_ext() {
+            None => {errors += 1; "no <image> or itunes extensions found".red()},
             Some(ext) => match ext.image() {
                 None => {errors += 1; "no <image> or <itunes:image> tag found".red()},
                 Some(imageurl) => format!("<itunes:image> tag with url:\n    \"{}\"",
