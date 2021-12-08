@@ -125,4 +125,5 @@ fn main() {
     }
 
     println!("{} errors", errors);
+    std::process::exit(errors); // returns 0 if successful, error count otherwise
 }
